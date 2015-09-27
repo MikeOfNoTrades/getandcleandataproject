@@ -52,13 +52,11 @@ Class: character, representing an integer<br />
 Describes the activity observed<br />
 Class: factor<br />
 ####Measurement variables
-  Each of the following varaibles represent various components of:<br />
+  Each of the following variables represent various components of:<br />
   ======================================<br />
   - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.<br />
   - Triaxial Angular velocity from the gyroscope. <br />
   - A 561-feature vector with time and frequency domain variables. <br />
-  - Its activity label. <br />
-  - An identifier of the subject who carried out the experiment.<br />
   ======================================<br />
 Class: numeric, floating point<br />
 
