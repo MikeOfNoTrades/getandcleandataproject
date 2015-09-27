@@ -1,11 +1,4 @@
----
-title: "Codebook for Project"
-author: "Mike"
-date: "September 27, 2015"
-output:
-  html_document:
-    keep_md: yes
----
+
 #Codebook
 ## Project Description
 This is my project for the course: Getting and Cleaning Data<br />
