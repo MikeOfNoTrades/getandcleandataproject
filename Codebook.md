@@ -28,31 +28,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
-1. download the data from [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
-2. unizip the data
-3. Make sure data is in your working directory
-4. Load libraries: 
-  <br />    dplyr
-  <br />    tidyr
-5. Using read.table, read each of the following files into variables
-  <br />subject_test:   "UCI HAR Dataset/test/subject_test.txt"
-  <br />subject_train:  "UCI HAR Dataset/train/subject_train.txt"
-  <br />x_test:         "UCI HAR Dataset/test/X_test.txt"
-  <br />y_test:         "UCI HAR Dataset/test/y_test.txt"
-  <br />x_train:        "UCI HAR Dataset/train//X_train.txt"
-  <br />y_train:        "UCI HAR Dataset/train//y_train.txt"   
-  <br />reading_labels: "UCI HAR Dataset/features.txt"
-6. Using bind -rows(), Merge test and train data
-  <br />subject:  subject_test, subject_train
-  <br />activity: y_test, y_train
-  <br />readings: x_test, x_train
-7. Name the first two columns "subject" and "activity", respectively
-8. Using bind_columns, merge the three datasets: subject, activity, readings
-9. Rename the activites: "walking", "walking-upstairs", "walking_downstairs", "sitting", "standing", "laying"
-10. Using grepl(), extract only the measurements on the mean and standard deviation for each measurement
-11. Group by subject and activity
-12. Use summarise_each() to get the means of subjects abd activities
-13. arrange according to subject
+<br />[README](README.md)
 
 ###Cleaning of the data
 The script reads the data files and merges them into three sets of data: subjects, activities and readings.
@@ -61,8 +37,6 @@ The script reads the data files and merges them into three sets of data: subject
 <br />It then renames the activities with desxriptive nouns rather than numbers.
 <br />The it extracts only the measurements on the mean and standard deviation for each reading.
 <br />The data is the grouped according to subject and activity, and the means of each grouping are extracted
-
-<br />[link to the readme document that describes the code in greater detail](readme.MD)
 
 ##Description of the variables in the tiny_data.txt file
  - Dimensions of the dataset: 180 rows x 68 columns
