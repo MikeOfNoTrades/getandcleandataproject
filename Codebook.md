@@ -34,8 +34,11 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
   <br />    dplyr
   <br />    tidyr
 4. Using read.table, read each of the following files into variables
-  <br />    
-    <br />    
+  <br />subject_test:    "UCI HAR Dataset/test/subject_test.txt"
+  <br />subject_train:   "UCI HAR Dataset/train/subject_train.txt"
+  <br />
+  <br />
+  <br />
 
 ###Cleaning of the data
 Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
