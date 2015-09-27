@@ -120,12 +120,5 @@ Class: numeric, floating point<br />
 #####fBodyBodyGyroJerkMag-mean()
 #####fBodyBodyGyroJerkMag-std()
 
-
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
-
-####Notes on variable 1:
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
-
 ##Sources
-[]()
 [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
