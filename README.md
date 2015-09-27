@@ -44,5 +44,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 11. Group by subject and activity
 12. Use summarise_each() to get the means of subjects abd activities
 13. arrange according to subject
+<br />
+
 ##Sources
 [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
