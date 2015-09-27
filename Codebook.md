@@ -28,7 +28,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
-1. download the data
+1. download the data from [Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
 2. unizip the data
 3. Make sure data is in your working directory
 4. Load libraries: 
@@ -162,7 +162,5 @@ Class: numeric, floating point<br />
 If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
 ##Sources
-Sources you used if any, otherise leave out.
-
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)
+[]()
+[Human Activity Recognition Using Smartphones Data Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones#)
