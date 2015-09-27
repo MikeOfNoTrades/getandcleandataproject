@@ -28,26 +28,49 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
-1. download the data,
-2. Make sure data is in your working directory
-3. Load libraries: 
+1. download the data
+2. unizip the data
+3. Make sure data is in your working directory
+4. Load libraries: 
   <br />    dplyr
   <br />    tidyr
-4. Using read.table, read each of the following files into variables
-  <br />subject_test:    "UCI HAR Dataset/test/subject_test.txt"
-  <br />subject_train:   "UCI HAR Dataset/train/subject_train.txt"
-  <br />
-  <br />
-  <br />
+5. Using read.table, read each of the following files into variables
+  <br />subject_test:   "UCI HAR Dataset/test/subject_test.txt"
+  <br />subject_train:  "UCI HAR Dataset/train/subject_train.txt"
+  <br />x_test:         "UCI HAR Dataset/test/X_test.txt"
+  <br />y_test:         "UCI HAR Dataset/test/y_test.txt"
+  <br />x_train:        "UCI HAR Dataset/train//X_train.txt"
+  <br />y_train:        "UCI HAR Dataset/train//y_train.txt"   
+  <br />reading_labels: "UCI HAR Dataset/features.txt"
+6. Using bind -rows(), Merge test and train data
+  <br />subject:  subject_test, subject_train
+  <br />activity: y_test, y_train
+  <br />readings: x_test, x_train
+7. Name the first two columns "subject" and "activity", respectively
+8. Using bind_columns, merge the three datasets: subject, activity, readings
+9. Rename the activites: "walking", "walking-upstairs", "walking_downstairs", "sitting", "standing", "laying"
+10. Using grepl(), extract only the measurements on the mean and standard deviation for each measurement
+11. Group by subject and activity
+12. Use summarise_each() to get the means of subjects abd activities
+13. arrange according to subject
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
+The script reads the data files and merges them into three sets of data: subjects, activities and readings.
+<br />It then renames the first two columns into subject and activity. 
+<br />It then merges the three sets of data into a single data set, where the first column is subject, the second activity, and the rest are the various readings taken duirng the study
+<br />It then renames the activities with desxriptive nouns rather than numbers.
+<br />The it xxtracts only the measurements on the mean and standard deviation for each reading.
+<br />The data is the grouped according to subject and activity, and the means of each grouping are extracted
+
+<br />[link to the readme document that describes the code in greater detail]()
 
 ##Description of the variables in the tiny_data.txt file
-General description of the file including:
- - Dimensions of the dataset
- - Summary of the data
- - Variables present in the dataset
+ - Dimensions of the dataset: 180 rows x 68 columns
+ - The first column is the subject, represented by an intger.
+ - The secong column is a description of the activity
+ - The remaining columns are the means of the measurements of eachg activity for each subject
+ ###Variables present in the dataset:
+ - 
 
 (you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
